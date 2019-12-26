@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.a201508721_final.SanupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/lin1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:showDividers="middle">
+                </TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/tabIntro"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+                                android:text="[산업경영학과]"
+                                android:textColor="#000000"
+                                android:textSize="30dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:background="#EEEEEE"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="시스템,경영 마인드를 갖춘 융복한 전문관리자 양성"
+                                    android:textColor="#000000"
+                                    android:textSize="20dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="체계적이고 효율적인 경영관리를 위해 필요한 제반지식과 관리 기술을 습득"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/tvTelsanup"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textColor="#33AACC"
+                                    android:textSize="17dp"
+                                    android:text="학과문의 02.490.7447" />
+
+                                <TextView
+                                    android:id="@+id/tvSanuphome"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textColor="#3A5AAA"
+                                    android:textSize="17dp"
+                                    android:text="학과홈페이지 바로가기" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="20dp"
+                                android:textColor="#000000"
+                                android:text="교육목표" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="산업경영학과는 21세기 지식·정보화 사회에 부응하여 체계적이고 효율적인 경영관리를 위해 필요 한 제반지식과 관리기술을 습득함으로써 디지털·정보화시대에 적응하고 나아가 국제 경쟁력 강화에 기여할 수 있는 융복합 전문관리자를 육성 하고 개발하는데 목표를 둔다." />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tabProfessor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/Pfsanup"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/sanup" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tabSubject"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="전공"
+                            android:textColor="#000000"
+                            android:textSize="30dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="산업경영학개론, 기초통계, 품질경영, 통계적품질관리, 경제성공학, 생산관리 기초, 실험계획법, 생산관리 심화, 산업안전관리, 시뮬레이션, 경영과학 기초, 경영과학 심화, 생산시스템응용 캡스톤 디자인, 창업과 경영, 비즈니스 매너, 비즈니스 영어기초, 비즈니스 영어심화, 문서작성관리, 회계원리, 전산회계 기초, 전산회계 심화, 전산세무, 기업경영과 세무, 유통경영학, 사무자동화운용, 마케팅전략, IT활용능력, 유통정보, 소비자행동, 서비스 경영, 고객서비스 실습, 빅데이터 활용, 소프트웨어 개발론, 3D프린터 활용, ERP 실무" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="교양"
+                            android:textColor="#000000"
+                            android:textSize="30dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="의사소통과 자원관리능력, IT와 수리능력, 문제해결과 조직이해 능력" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="취득할 수 있는 자격"
+                            android:textColor="#000000"
+                            android:textSize="30dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="품질경영산업기사, 안전관리산업기사, ERP정보관리사(생산·물류), 물류관리사 등의 생산품질분야 전문자격 전산회계(세무), 유통관리사, ERP정보관리사(인사·회계), 컴퓨터활용능력 등의 경영분야 전문자격" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tabFuture"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="30dp"
+                            android:text="진로" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="품질관리 분야, 산업안전관리분야, 전자상거래 분야, 판매관리 분야, 유통·물류관리 분야, 경리·회계관리 분야, 공정관리 분야, 사무행정 분야, 정보처리 분야" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </TabHost>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btexitSanup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btexit3" />
+    </LinearLayout>
+
+</LinearLayout>

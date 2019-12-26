@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.a201508721_final.FoodActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/lin1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:showDividers="middle">
+                </TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/tabIntro"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+                                android:text="[식품영양학과]"
+                                android:textColor="#000000"
+                                android:textSize="30dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:background="#EEEEEE"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="일당백 식품영양!"
+                                    android:textColor="#000000"
+                                    android:textSize="20dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="인간의 건강 및 영양상태 개선을 책임지며 식생화을 통한\n국민 건강 향상에 기여하는 학과"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/tvTelfood"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textColor="#33AACC"
+                                    android:textSize="17dp"
+                                    android:text="학과문의 02.490.7507" />
+
+                                <TextView
+                                    android:id="@+id/tvFoodhome"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textColor="#3A5AAA"
+                                    android:textSize="17dp"
+                                    android:text="학과홈페이지 바로가기" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="20dp"
+                                android:textColor="#000000"
+                                android:text="교육목표" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="- 지식과 기술을 겸비한 전문인을 양성할 수 있는 첨단의 전문지식과 기술 교육 : 지식정보화 시대의 발전에 능동적으로 대처하고 급식산업 경영과 영양에 관한 첨단 교육\n- 현장적응 능력을 갖출 수 있는 현장실무중심 맞춤형 교육 : 산학협동을 통한 교육의 내실화를 다지고 혁신적인 현장 실무능력 강화\n- 문제해결 능력을 갖출 수 있는 자기주도형 교육 : 창의적인 사고와 정직한 삶을 추구하고 실천하는 자기완성 및 문제해결 능력을 갖춘 미래지향적 교육\n- 예절을 기본으로 신뢰와 성실을 실천할 수 있는 인성·지성형 교육" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tabProfessor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/Pffood"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/food" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tabSubject"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="전공"
+                            android:textColor="#000000"
+                            android:textSize="30dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="식생활과 문화, 일반화학, 공중보건학, 급식경영 및 마케팅전략, 실험조리실습, 제과제빵실습, 식품분석실험, 영양생리학, 기초영양학, 고급영양학, 식품화학, 외식창업 및 실습, 한국음식연구 및 실습, 한국조리실습, 식품학, 단체급식관리 및 실습, 영양화학실험, 생화학, 고급생화학, 환경위생학, 서양조리실습, 기능성식품, 임상영양 및 실습, 식품위생관계법규, 외식상품개발 캡스톤 디자인, 식품위생학, 조리원리, 식품미생물학 및 실습, 지역사회영양학, 식사요법 및 실습, 영양판정 및 실습, 영양교육 및 실습, 식품가공 및 저장학, 식생활관리 및 실습, 급식경영학, 영양사취업준비실무, 식사관리특론, 영양관리특론, 생애주기영양학, 영양사현장실습"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="교양"
+                            android:textColor="#000000"
+                            android:textSize="30dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="영양사의 문제해결능력, 식품영양전문인의 자기개발, 식품영양 정보관리" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="취득할 수 있는 자격"
+                            android:textColor="#000000"
+                            android:textSize="30dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="영양사, 위생사, 식품산업기사, 조리기능사 및 조리산업기사(한식, 양식, 제과제빵)" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tabFuture"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="30dp"
+                            android:text="진로" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="- 산업체, 학교, 의료기관 및 후생복지 시설 등 집단급식소의 급식관리 전문 영양사\n- 식품위생직 및 보건 영양 영양사(지역사회 영양사업 분야)\n- 상담 영양사\n- 조리사 및 외식산업 관련 매니저\n- 식품 제조업체 및 연구기관의 연구원\n- 품질관리연구원" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </TabHost>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btexitFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btexit3" />
+    </LinearLayout>
+
+</LinearLayout>

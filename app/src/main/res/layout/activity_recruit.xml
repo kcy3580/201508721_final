@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_weight="1"
+    tools:context="com.example.a201508721_final.RecruitActivity">
+
+
+    <Button
+        android:id="@+id/btRecruit1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/btexit5"
+        android:layout_alignStart="@+id/btexit5"
+        android:layout_marginBottom="51dp"
+        android:text="@string/btRecruit1" />
+
+    <Button
+        android:id="@+id/btRecruit2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/btRecruit1"
+        android:layout_alignBottom="@+id/btRecruit1"
+        android:layout_toEndOf="@+id/btRecruit1"
+        android:text="@string/btRecruit2" />
+
+    <Button
+        android:id="@+id/btRecruit3"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/btRecruit1"
+        android:layout_below="@+id/btRecruit2"
+        android:text="@string/btRecruit3" />
+
+    <Button
+        android:id="@+id/btRecruit4"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/btRecruit2"
+        android:layout_below="@+id/btRecruit2"
+        android:text="@string/btRecruit4" />
+
+    <Button
+        android:id="@+id/btexit5"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="59dp"
+        android:text="@string/btexit5" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btRecruit1"
+        android:layout_centerHorizontal="true"
+        android:text="(터치하면 이동합니다)" />
+
+    <ImageView
+        android:id="@+id/worknet"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/textView6"
+        android:layout_marginBottom="30dp"
+        android:layout_toEndOf="@+id/btRecruit1"
+        android:src="@drawable/worknet" />
+
+    <ImageView
+        android:id="@+id/jobkorea"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/worknet"
+        android:layout_toStartOf="@+id/worknet"
+        android:src="@drawable/jobkorea" />
+
+    <ImageView
+        android:id="@+id/saramin"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/worknet"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/saramin" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/saramin"
+        android:layout_alignStart="@+id/jobkorea"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="[ 교내 및 교외 채용정보 ]"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+</RelativeLayout>

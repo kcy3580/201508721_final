@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main2dlg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a201508721_final.Main2Activity">
+
+    <TextView
+        android:id="@+id/tvEx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:text="@string/tvEx"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/IntroView"
+        android:layout_width="300dp"
+        android:layout_height="152dp"
+        android:layout_below="@+id/tvEx"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/intro" />
+
+    <Button
+        android:id="@+id/btcampus"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/IntroView"
+        android:layout_below="@+id/tvMajor3"
+        android:layout_marginTop="65dp"
+        android:text="@string/btcampus" />
+
+    <Button
+        android:id="@+id/btExMajor"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/btcampus"
+        android:layout_toEndOf="@+id/btcampus"
+        android:text="@string/btExMajor" />
+
+    <Button
+        android:id="@+id/btbus"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/btcampus"
+        android:layout_below="@+id/btcampus"
+        android:text="@string/btbus" />
+
+    <Button
+        android:id="@+id/btrecruit"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btExMajor"
+        android:layout_toEndOf="@+id/btcampus"
+        android:text="@string/btrecruit" />
+
+    <Button
+        android:id="@+id/btexit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btrecruit"
+        android:layout_alignStart="@+id/btbus"
+        android:layout_below="@+id/btbus"
+        android:text="@string/btexit" />
+
+    <TextView
+        android:id="@+id/tvAccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_below="@+id/IntroView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tvAccess" />
+
+    <TextView
+        android:id="@+id/tvName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_below="@+id/tvAccess"
+        android:layout_marginEnd="11dp"
+        android:layout_toStartOf="@+id/tvAccess"
+        android:text="@string/tvName3" />
+
+    <TextView
+        android:id="@+id/tvAge3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_alignStart="@+id/tvName3"
+        android:layout_below="@+id/tvName3"
+        android:text="@string/tvAge3" />
+
+    <TextView
+        android:id="@+id/tvMajor3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_alignStart="@+id/tvAge3"
+        android:layout_below="@+id/tvAge3"
+        android:text="@string/tvMajor3" />
+
+    <TextView
+        android:id="@+id/tvName4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAccess"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tvName4"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tvAge4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvName4"
+        android:layout_below="@+id/tvName4"
+        android:text="@string/tvAge4"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tvMajor4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_alignStart="@+id/tvAge4"
+        android:layout_below="@+id/tvAge4"
+        android:text="@string/tvMajor4" />
+
+    <Button
+        android:id="@+id/btSchoolsystem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btExMajor"
+        android:layout_alignStart="@+id/btcampus"
+        android:layout_toStartOf="@+id/btExMajor"
+        android:text="@string/btSchoolsystem" />
+
+    <Button
+        android:id="@+id/btCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btExMajor"
+        android:layout_alignEnd="@+id/btExMajor"
+        android:layout_toEndOf="@+id/btcampus"
+        android:text="@string/btCheck" />
+</RelativeLayout>

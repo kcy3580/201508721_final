@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.a201508721_final.SportsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/lin1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:showDividers="middle">
+                </TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/tabIntro"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+                                android:text="[레저스포츠학과]"
+                                android:textColor="#000000"
+                                android:textSize="30dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:background="#EEEEEE"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="4차산업혁명시대를 선도하는 레저산업 및 헬스케어 전문인력양성!"
+                                    android:textColor="#000000"
+                                    android:textSize="20dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/tvTelsp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textColor="#33AACC"
+                                    android:textSize="17dp"
+                                    android:text="학과문의 02.490.7543" />
+
+                                <TextView
+                                    android:id="@+id/tvSphome"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textColor="#3A5AAA"
+                                    android:textSize="17dp"
+                                    android:text="학과홈페이지 바로가기" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="20dp"
+                                android:textColor="#000000"
+                                android:text="교육목표" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="사회 환경의 변화와 더불어 여가는 우리 삶에서 더욱 중요한 의미를 갖는다. 특히 신체활동을 통한 건전한 레저 스포츠의 참가와 여가활동의 선용은 사회구성원들의 삶을 풍요롭게 할뿐만 아니라 건전한 민주시민으로서의 건강한 사회구성원 형성에 크게 기여할 수 있다. 레저스포츠학과는 여가문화에서 중요한 위치를 차지하고 있으며 사회적 수요가 급증하고 있는 레저스포츠 분야의 전문 인력을 양성하는데 중점을 두고 있을 뿐만 아니라. 체계적이고 전문적이며 현장 중심적인 교육 환경에서 학문적 지식뿐만 아니라 실기와 실무능력을 겸비한 우수한 여가 활동지도자 및 스포츠지도자를 양성하고자 한다." />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tabProfessor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/Pfsp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tabSubject"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="전공"
+                            android:textColor="#000000"
+                            android:textSize="30dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="레크 원리, 기악 1,2, 스피취와 커뮤니케이션 1,2, 놀이지도 1,2,3,4, 유아활동지도, 레크스포츠 1,2, 구급법, 레크 미술공작, 집단무용 1,2,3, 레크리에이션 마술, 청소년지도자론, 캠프지도 1,2, 구룹웍, 프로그램개발 1,2, 생활음악 1,2, 국악, 레크관리론, 놀이치료법, 연극지도, 스포츠마사지, 기관실습 1,2, 음향조명기술론, 심성훈련, 카운슬링, 지역사회레크, 레크지도자론, 무대기술 및 연출" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="교양"
+                            android:textColor="#000000"
+                            android:textSize="30dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="동양철학, 역사와 문화, 생활체육, 실무영어, 인터넷, 직업윤리" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="취득할 수 있는 자격"
+                            android:textColor="#000000"
+                            android:textSize="30dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="전문 레크리에이션 지도자, 게이트볼 심판원 자격증, 생활체육 및 레저 스포츠 관련 자격증, 벌룬아트 자격증, 응급처치 자격증, 유아체육지도자 자격증, 스포츠마사지사 자격증, 청소년 지도사 자격증, 수중⦁수상 인명구조 자격증" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tabFuture"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="30dp"
+                            android:text="진로" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="기업체 연수 담당, 캠프지도자, 사회복지단체, 청소년 단체, 병원 레크리에이션 및 정신치료 분야, 사회체육관련기관, 행사 기획업체, 관광관련기관, 프리랜서, 각종모임진행자(MC), 문화센터 강사 등" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </TabHost>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btexitSp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btexit3" />
+    </LinearLayout>
+
+</LinearLayout>

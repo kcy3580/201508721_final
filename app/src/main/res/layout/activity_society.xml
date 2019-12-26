@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.a201508721_final.SocietyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/lin1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:showDividers="middle">
+                </TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/tabIntro"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+                                android:text="[사회복지학과]"
+                                android:textColor="#000000"
+                                android:textSize="30dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:background="#EEEEEE"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="21세기 삶의 질은 우리의 손에!"
+                                    android:textColor="#000000"
+                                    android:textSize="20dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="다양한 사회문제를 효과적으로 해결하며 인산의 삶의 질을 향상시킬 수 있는 사회복지 전문인력을 양성"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/tvTelso"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textColor="#33AACC"
+                                    android:textSize="17dp"
+                                    android:text="학과문의 02.490.7589" />
+
+                                <TextView
+                                    android:id="@+id/tvSohome"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textColor="#3A5AAA"
+                                    android:textSize="17dp"
+                                    android:text="학과홈페이지 바로가기" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="20dp"
+                                android:textColor="#000000"
+                                android:text="교육목표" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="대학의 교육목표인 창의융합형 교육, 현장중심형 교육, 자기주도형 교육, 인성지향형 교육을 실현하기 위하여 사회복지학과에서는 대한민국을 대표하는 실무중심 사회복지사 양성을 교육목표로 설정하고 있다. 학과의 3대 특성화 전략으로 전문 직업인 양성교육, 산학협동 및 취업 활성화, 최적의 교육환경 조성을 추진하고 있다. 사회복지학과는 21세기 복지사회 실현을 위한 실무중심 사회복지사 양성을 위하여 사회복지의 이론과 실천현장 실무 능력의 조화를 도모하며 사회복지의 전문 지식, 기술, 가치 교육을 통한 사회복지 전문 인력 양성을 위한 교육과정을 운영한다." />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tabProfessor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/Pfso"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/so" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tabSubject"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="전공"
+                            android:textColor="#000000"
+                            android:textSize="30dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="사회복지학개론, 인간행동과 사회환경, 사회문제론, 자원봉사론, 가족복지론, 사회복지역사, 사회복지실천론, 정신건강론, 장애인복지론, 노인복지론, 여성과 사회, 가족과 문화, 사회복지정책론, 사회복지실천기술론, 사회복지조사론, 지역사회복지론, 사례관리론, 가족상담 및 가족치료, 사회복지법제와 실천, 사회복지현장실습, 사회복지행정론, 아동복지론, 프로그램 개발과 평가, 비영리기관 운영관리" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="취득할 수 있는 자격"
+                            android:textColor="#000000"
+                            android:textSize="30dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="사회복지사 2급, 건강가정사" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tabFuture"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="30dp"
+                            android:text="진로" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="- 아동복지, 노인복지, 장애인복지, 가족복지, 지역사회복지, 정신보건복지 등의 사회복지시설·기관 및 단체의 사회복지사\n- 건강가정지원센터, 다문화가족지원센터 등의 건강가정사\n- 전국 시·도 및 시·군·구의 사회복지공무원\n- 국민건강보험공단, 국민연금공단 등의 사회복지 관련 공단\n- 사회복지 관련 민간기업, 지방자치단체의 사회복지재단 등\n- 4년제 대학의 관련학과 편입학(사회복지학과·가족복지학과·노인복지학과 등)" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </TabHost>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btexitSo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btexit3" />
+    </LinearLayout>
+
+</LinearLayout>

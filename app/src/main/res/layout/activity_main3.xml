@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a201508721_final.Main3Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:text="[ Seoil University's Campus ]"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/campusView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/textView"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/campus" />
+
+        <Button
+            android:id="@+id/btHocheon"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="124dp"
+            android:text="@string/btHocheon"
+            android:textSize="5dp"/>
+
+        <Button
+            android:id="@+id/btHeung"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_alignStart="@+id/textView"
+            android:layout_alignTop="@+id/btHocheon"
+            android:text="@string/btHeung"
+            android:textSize="5.74dp" />
+
+        <Button
+            android:id="@+id/btChoil"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_alignStart="@+id/textView"
+            android:layout_alignTop="@+id/btHocheon"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="13dp"
+            android:text="@string/btChoil"
+            android:textSize="5.74dp" />
+
+        <Button
+            android:id="@+id/btSejong"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_above="@+id/btHeung"
+            android:layout_alignStart="@+id/btHeung"
+            android:layout_marginBottom="26dp"
+            android:text="@string/btSejong"
+            android:textSize="5.74dp" />
+
+        <Button
+            android:id="@+id/btJ"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/btChoil"
+            android:text="@string/btJ"
+            android:textSize="5dp" />
+
+        <Button
+            android:id="@+id/btSeoil"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@+id/btSejong"
+            android:layout_marginBottom="16dp"
+            android:layout_toEndOf="@+id/btJ"
+            android:text="@string/btSeoil"
+            android:textSize="5dp" />
+
+        <Button
+            android:id="@+id/btJiduck"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_alignTop="@+id/btSejong"
+            android:layout_marginStart="13dp"
+            android:layout_toEndOf="@+id/btSeoil"
+            android:text="@string/btJiduck"
+            android:textSize="5dp" />
+
+        <Button
+            android:id="@+id/btLib"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_above="@+id/btSeoil"
+            android:layout_alignStart="@+id/btJiduck"
+            android:layout_marginStart="11dp"
+            android:text="@string/btLib"
+            android:textSize="5dp" />
+
+        <Button
+            android:id="@+id/btBae"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_above="@+id/btJiduck"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/btLib"
+            android:text="@string/btBae"
+            android:textSize="5dp" />
+
+        <Button
+            android:id="@+id/btNuri"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_above="@+id/btHeung"
+            android:layout_toEndOf="@+id/btLib"
+            android:text="@string/btNuri"
+            android:textSize="5dp" />
+
+        <Button
+            android:id="@+id/btEntrance"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/btChoil"
+            android:layout_toEndOf="@+id/btChoil"
+            android:text="@string/btEntrance"
+            android:textSize="5dp" />
+
+        <Button
+            android:id="@+id/btK"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/btHeung"
+            android:layout_toEndOf="@+id/btEntrance"
+            android:text="@string/btK"
+            android:textSize="5dp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/lin1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:showDividers="middle">
+                </TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:id="@+id/tabTotal1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/number"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tabTotal2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/total2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/total2" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </TabHost>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btexit2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btexit2" />
+    </LinearLayout>
+
+</LinearLayout>

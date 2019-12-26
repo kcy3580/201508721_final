@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.a201508721_final.CommuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/lin1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:showDividers="middle">
+                </TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/tabIntro"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+                                android:text="[커뮤니케이션디자인학과]"
+                                android:textColor="#000000"
+                                android:textSize="30dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:background="#EEEEEE"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="시각으로 통(通)하다!"
+                                    android:textColor="#000000"
+                                    android:textSize="20dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="산업, 문화 전분야에서 문화적, 과학적 소망을 갖춘 합리적인 시각 디자이너를 양성"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/tvTelcommu"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textColor="#33AACC"
+                                    android:textSize="17dp"
+                                    android:text="학과문의 02.490.7533" />
+
+                                <TextView
+                                    android:id="@+id/tvCommuhome"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textColor="#3A5AAA"
+                                    android:textSize="17dp"
+                                    android:text="학과홈페이지 바로가기" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="20dp"
+                                android:textColor="#000000"
+                                android:text="교육목표" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="커뮤니케이션디자인학과 2년제의 커리큘럼으로 기초단계와, 기본단계, 심화.전문 단계로 나누어 운영하고 있으며 기본단계에서는 시각 디자인에 관한 전반적인 지식과 기본적인 프로그램을 익히고, 심화.전문 단계에서는 산학 협력 업체와 연계하여 다양한 분야의 트렌드를 접하고 스토리 있는 시각적 결과물 제작을 위한 총체적 디자인 프로세스를 경험하게 한다. 이를 위하여 산업,문화 전 분야에서 문화적, 과학적 소망을 갖춘 합리적인 시각 디자이너를 양성하는 프로그램을 운영한다." />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tabProfessor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/Pfcommu"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/commu" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tabSubject"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="전공"
+                            android:textColor="#000000"
+                            android:textSize="30dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="색채학, 기초그래픽디자인, 디자인기획과컨셉기초, 디자인기초드로잉, IT융합기반기초디자인, 표현기법기초, 타이포그래피기초, 디자인실무방법론, 그래픽 디자인, 표현기법, 웹디자인기초, 캐릭터디자인, 디자인기획과컨셉심화, 타이포그래피심화, IT융합기반응용디자인, 광고포토그래픽, 그래픽스튜디오, 브랜드디자인, 일러스트레이션, 시각매체디자인, 디지털정보디자인, 시각디자인프로젝트, 브랜드디자인프로젝트, 크리에이티브일러스트레이션, 시각콘텐츠디자인, 디지털정보디자인프로젝트, 취창업포트폴리오, 광고커뮤니케이션캡스톤디자인" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="교양"
+                            android:textColor="#000000"
+                            android:textSize="30dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="생활체육, 실무영어, 직업윤리, 인터넷, 영어회화" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="취득할 수 있는 자격"
+                            android:textColor="#000000"
+                            android:textSize="30dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="시각디자인기사 2급, 컬러리스트 산업기사, 컴퓨터 그래픽 운용기능사, 산업디자인기사2급 등" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tabFuture"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="30dp"
+                            android:text="진로" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="UI/UX 디자이너, 웹 디자이너, 편집 디자이너, 서비스 디자이너, 그래픽 디자이너, 디지털 프로모션 디자이너, 모션 그래픽 디자이너, 디자인 기획, 컨셉 디자이너, 비주얼 디자이너, 시각 디자이너, 브랜드 디자이너, 모바일 앱 디자인, 인터렉티브 디자인, 타이포그라퍼, UX[UIGUI] 디자인 전문 회사, 웹 디자인 전문 회사, 인터랙티브 디자인 전문 회사, 디지털 서비스 디자인 전문 회사, 디지털 미디어 디자인 전문 회사, 그래픽 디자인 전문 회사, 커뮤니케이션 디자인 전문 회사, 기업의 홍보실 및 디자인실, 광고 영상 디자인" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </TabHost>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btexitCommu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btexit3" />
+    </LinearLayout>
+
+</LinearLayout>

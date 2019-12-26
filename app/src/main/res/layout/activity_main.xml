@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a201508721_final.MainActivity">
+
+    <ImageView
+        android:id="@+id/SeoilView"
+        android:layout_width="193dp"
+        android:layout_height="152dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:src="@drawable/seoil" />
+
+    <Button
+        android:id="@+id/btstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/SeoilView"
+        android:layout_below="@+id/SeoilView"
+        android:layout_marginTop="17dp"
+        android:text="@string/btstart" />
+
+    <Button
+        android:id="@+id/btinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btstart"
+        android:layout_alignBottom="@+id/btstart"
+        android:layout_alignEnd="@+id/SeoilView"
+        android:text="@string/btinput" />
+
+    <Button
+        android:id="@+id/bteditor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/SeoilView"
+        android:layout_alignStart="@+id/btstart"
+        android:layout_below="@+id/btstart"
+        android:layout_marginTop="17dp"
+        android:text="@string/bteditor" />
+
+    <Button
+        android:id="@+id/btend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/bteditor"
+        android:layout_alignStart="@+id/bteditor"
+        android:layout_below="@+id/bteditor"
+        android:layout_marginTop="17dp"
+        android:text="@string/btend" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btinput"
+        android:layout_below="@+id/btend"
+        android:layout_marginTop="20dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvName"
+        android:layout_below="@+id/tvName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvMajor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvAge"
+        android:layout_below="@+id/tvAge"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvName"
+        android:layout_alignBottom="@+id/tvName"
+        android:layout_alignEnd="@+id/btstart"
+        android:layout_marginEnd="16dp"
+        android:text="@string/tvName2"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tvAge2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvName2"
+        android:layout_below="@+id/tvName2"
+        android:textColor="#FFFFFF"
+        android:text="@string/tvAge2" />
+
+    <TextView
+        android:id="@+id/tvMajor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvAge2"
+        android:layout_alignTop="@+id/tvMajor"
+        android:textColor="#FFFFFF"
+        android:text="@string/tvMajor2" />
+
+
+</RelativeLayout>

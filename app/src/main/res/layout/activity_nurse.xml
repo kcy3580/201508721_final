@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.a201508721_final.NurseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/lin1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:showDividers="middle">
+                </TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/tabIntro"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+                                android:text="[간호학과]"
+                                android:textColor="#000000"
+                                android:textSize="30dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:background="#EEEEEE"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="국가와 사회발전에 참여\n국민의 건강 유지 증진에 기여!"
+                                    android:textColor="#000000"
+                                    android:textSize="20dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="전문 간호인력양성이라는 최우선 과제를 가지고 현재까지 약 1300여명의 간호사를 배출."
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/tvTelnurse"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textColor="#33AACC"
+                                    android:textSize="13dp"
+                                    android:text="학과문의 02.490.7507" />
+
+                                <TextView
+                                    android:id="@+id/tvNursehome"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textColor="#3A5AAA"
+                                    android:textSize="13dp"
+                                    android:text="학과홈페이지 바로가기" />
+
+                                <TextView
+                                    android:id="@+id/tvNursecafe"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textColor="#3A5AAA"
+                                    android:textSize="13dp"
+                                    android:text="간호학과 카페" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="20dp"
+                                android:textColor="#000000"
+                                android:text="교육목표" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="- 전인간호를 위한 생명존중의식과 간호윤리관을 확립한다.\n- 전문적 지식을 통합하여 간호실무에 적용한다.\n- 건강관리실무에서 효율적으로 의사소통하고 상호 협력한다.\n- 간호 문제 해결을 위한 비판적 사고 능력과 연구 수행 능력을 함양한다\n- 건강관리영역에서 지도자적 능력을 발휘한다.\n- 국내·외 보건의료환경 변화에 대응하는 능력을 함양한다.\n- 간호 전문인으로서의 자기관리와 자기계발 능력을 함양한다." />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tabProfessor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/Pfnurse"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/nurse" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tabSubject"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="전공"
+                            android:textColor="#000000"
+                            android:textSize="30dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="간호영어, 미생물학, 기본간호학Ⅰ, 기본간호학실습Ⅰ, 기본간호학Ⅱ, 기본간호학실습Ⅱ, 간호과정과 비판적 사고, 인간관계와 의사소통론, 모성간호학ⅠⅡⅢ, 아동간호학ⅠⅡⅢ, 성인간호원론, 성인간호학ⅠⅡⅢⅣⅤ, 임상약리, 간호사, 건강사정, 모성간호학 실습, 모성간호학 및 실습, 아동간호학 실습, 아동간호학 및 실습, 성인간호학실습ⅠⅡ, 간호관리학ⅠⅡⅢ, 성인간호학 및 실습, 학교보건, 진단검사와 간호, 정신간호학ⅠⅡⅢ, 지역사회간호학ⅠⅡⅢ, 간호정보학, 노인간호학, 응급간호, 정신간호학실습, 정신간호학 및 실습, 지역사회간호학실습, 지역사회 간호학 및 실습, 간호관리학실습ⅠⅡ, 재활간호, 호스피스 간호학, 간호철학 및 윤리, 건강사정 및 실습, 인체구조와 기능 I, 인체구조와 기능 II, 인간심리의 이해, 다문화 이해, 리더십 코칭 간호전문직과 윤리, 보건의료법규, 수술 및 응급간호, 시뮬레이션 실습 I, 시뮬레이션 실습 II, 핵심간호실기"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="교직"
+                            android:textColor="#000000"
+                            android:textSize="30dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="교육학개론, 교육철학 및 교육사, 교육심리, 학교폭력의 예방 및 대책 교육방법 및 교육공학, 특수교육학 기록, 교직실무교육평가, 교육봉사활동, 학습현장실습" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="취득할 수 있는 자격"
+                            android:textColor="#000000"
+                            android:textSize="30dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="간호사, 보건교사, 보건교육사" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tabFuture"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="30dp"
+                            android:text="진로" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="취업관리 : 취업전담교수 책임아래 졸업 후 1년간 취업관리시스템 운영\n- 임상간호사\n- 보건교사\n- 보건교육사\n- 진학(4년제 대학 및 대학원)\n- 간호직 및 보건직 공무원(보건간호사, 보건진료소장 및 보건소장)\n- 보건관리자(산업간호사)\n- 연구 간호사\n- 보건의료관련 기관 취업\n- 해외취업간호사\n- 간호장교\n- 창업(보건의료관련 요양기관, 보육기관)\n- 조산사(간호사로서 조산수습과정 수료 및 국가고시)\n- 전문간호사(대학원진학 후 전문과정 수료 및 국가고시)\n- 가정, 정신, 마취, 보건, 응급, 산업, 중환자, 노인, 호스피스, 감염관리, 종양, 임상, 아동 등 13개 분야 전문간호사" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </TabHost>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btexitNurse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btexit3" />
+    </LinearLayout>
+
+</LinearLayout>
